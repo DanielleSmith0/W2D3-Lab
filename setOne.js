@@ -134,9 +134,7 @@ Let's invoke the 'multiplyingFactory' function that will return another function
 
 // CODE HERE
 
-const timesFour = multiplyingFactory(8);
-
-timesFour(3);
+const timesFour = multiplyingFactory(5);
 
 /* 
 Now, timesFour is the new function (the inner function that was being returned when we invoked 'multiplyingFactory' function). The number 3 that we passed in as a first number is now saved in the 'timesFour' function. 
@@ -148,6 +146,7 @@ Run the code in node to see the printed result. You should see "Cannot multiply:
 
 // INVOKE 'timesFour' HERE
 
+timesFour(4);
 
 /* 
 Change the param for 'multiplyingFactory' invocation to number 5. Then invoke 'timesFour' again, passing in number 4. Run the code in node, and you should see 20.
