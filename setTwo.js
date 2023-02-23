@@ -124,6 +124,11 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE 
 
+function each(arrOfNames, callback) {
+  for(let i = 0; i < arrOfNames.length; i++){
+    callback(arrOfNames[i], i);
+  }
+}
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -133,10 +138,15 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 */
 
 // CODE HERE
+//Not anomynous
+// let aCallBack = (items, index) => { 
+//   console.log(`The item at ${index} is ${item}`)
+// }
 
-
-
-
+//anomynous
+each(names, (item, index) => { 
+  console.log(`The item at ${index} is ${item}`)
+})
 
 ////////// CHALLENGES //////////
 
