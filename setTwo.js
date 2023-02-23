@@ -37,18 +37,17 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE 
 
-const first (par1, par2, arr, callback){
-  console.log(callback())
+const first = (arr, callback) => {
+  callback(arr[0]);
 }
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// first(names, firstName => {
-//   console.log('The first name in names is ' + firstName)
-// })
-
+first(names, firstName => {
+  console.log('The first name in names is ' + firstName)
+})
 
 
 ////////// PROBLEM 3 //////////
@@ -60,16 +59,17 @@ const first (par1, par2, arr, callback){
 
 // CODE HERE
 
+const last = (arr, callback) => {
+  callback(arr[arr.length-1]);
+}
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// last(names, lastName => {
-//   console.log('The last name in names is ' + lastName)
-// })
-
-
+last(names, lastName => {
+  console.log('The last name in names is ' + lastName)
+})
 
 ////////// PROBLEM 4 //////////
 
